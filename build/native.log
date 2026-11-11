@@ -1,0 +1,136 @@
+Isolated runtime: run_20261025_161547_38b21f96
+Completed before timeout: True
+--- Logs/20261026.log ---
+HM	0	00:15:51.283	Terminal	updating [PROJECT_ROOT]\build\mt5-native\run_20261025_161547_38b21f96\MQL5 folder
+EL	0	00:15:51.283	Terminal	453 files updated
+IJ	0	00:15:51.383	Startup	successfully initialized from start config "[PROJECT_ROOT]\build\mt5-native\run_20261025_161547_38b21f96\offline-tests.ini"
+QS	0	00:15:52.197	Terminal	MetaTrader 5 x64 build 6281 started for MetaQuotes Ltd.
+EN	0	00:15:52.198	Terminal	[PROJECT_ROOT]\build\mt5-native\run_20261025_161547_38b21f96
+RN	0	00:15:52.198	Terminal	launched with [PROJECT_ROOT]\build\mt5-native\run_20261025_161547_38b21f96\offline-tests.ini
+JD	3	00:15:52.226	Compiler	Please update your MetaEditor to the latest version
+FG	2	00:15:52.616	MQL5.community	authorization failed
+MF	0	00:15:55.401	Scripts	script Biltech_AllTests (EURUSD,M5) loaded successfully
+MI	0	00:15:55.493	Scripts	script Biltech_AllTests (EURUSD,M5) closes terminal with code 1
+IQ	0	00:15:55.494	Scripts	script Biltech_AllTests (EURUSD,M5) removed
+EG	0	00:15:55.755	Terminal	exit with code 1
+HM	0	00:15:56.815	Terminal	stopped with 0
+DH	0	00:15:56.938	Terminal	shutdown with 1
+--- MQL5\Logs/20261026.log ---
+GL	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	BILTECH_NATIVE_BEGIN: synthetic fixtures only; no account, orders or market backtest.
+RL	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: NY spring transition last standard second
+IF	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: NY spring transition first daylight second
+QE	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: NY fall transition last daylight second
+OR	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: NY repeated fall hour maps from UTC deterministically
+JS	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: pre-2007 March still standard time
+KI	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: pre-2007 first Sunday April start
+FK	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: pre-2007 last Sunday October end
+EP	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: 1987 rule boundary supported
+IF	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: unsupported historical calendar rejected
+QG	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: daylight entry window begins inclusively
+CP	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: entry window ends exclusively
+OE	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: standard-time window and weekend exclusion
+EI	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: UTC midnight uses New York calendar date
+OO	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: session boundaries use historical NY DST
+ML	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: prior Friday cash session across DST weekend
+EQ	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: completed current cash session available at close
+FI	0	00:15:55.442	Biltech_AllTests (EURUSD,M5)	PASS: broker offset never inferred without schedule
+PJ	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: strict broker schedule loads
+EN	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: historical server-to-UTC offset
+EJ	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: offset transition uses end-exclusive interval
+ME	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: missing broker clock hour rejected
+CQ	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: ambiguous broker clock hour rejected
+FN	0	00:15:55.444	Biltech_AllTests (EURUSD,M5)	PASS: schedule coverage end is exclusive
+QD	0	00:15:55.445	Biltech_AllTests (EURUSD,M5)	PASS: schedule gap rejected at load
+DO	0	00:15:55.447	Biltech_AllTests (EURUSD,M5)	PASS: schedule overlap rejected at load
+QS	0	00:15:55.448	Biltech_AllTests (EURUSD,M5)	PASS: malformed calendar or offset rejected
+FG	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: future H1 right-side bars cannot confirm latest pivot early
+CH	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: pivot becomes eligible exactly at right-bar close
+MJ	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: impulse pairs latest eligible high with latest chronologically earlier low
+OK	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: newly armed setup excludes just-closed M5 bar
+GN	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: frozen long retracement boundaries
+GL	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: long A intersects zone and closes upward
+NI	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: long B confirms and permanently consumes setup
+GG	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: duplicate decision does not produce another signal
+HM	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: rejected execution cannot rearm consumed impulse
+DS	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: strategy retirement and last-bar state restores
+IQ	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: restart rejects already processed bar
+DJ	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: restart retains consumed impulse lock
+LP	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: malformed restored strategy state rejected
+CM	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: newer pivots never replace active frozen anchors
+CN	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: short anchors and zone exactly mirror long
+LD	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: short A/B confirmation exactly mirrors long
+QD	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: earliest A remains selected despite later candidates
+MO	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: missing M5 slots consume B confirmation window
+MP	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: first zone touch starts expiry even without directional A
+DQ	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: expiry counts elapsed slots across missing bars
+RH	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: expiry takes precedence over otherwise valid B
+DF	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: 88.6 invalidation takes precedence over seeded B evidence
+EM	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: invalidated impulse cannot rearm
+IP	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: changed bias invalidates before otherwise valid B
+RK	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: ATR mean true range includes gap from previous close
+GE	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	PASS: ATR rejects insufficient history
+GG	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	BILTECH_CORE_TESTS: passed=52 failed=0
+OS	0	00:15:55.449	Biltech_AllTests (EURUSD,M5)	SYNTHETIC TESTS ONLY: these data are hand authored and are not exchange data.
+MO	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: load strict valid fixture
+RE	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: complete M5 coverage
+DQ	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: refuse undeclared coverage
+NS	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: refuse partial M5 query
+MF	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: chart/import long-A extrema agree
+LS	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: chart/import long-B extrema agree
+MD	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: chart/import mirrored short-A extrema agree
+HG	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject chart range containing unimported extreme
+ED	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject imported price outside chart range
+NL	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject chart extreme outside imported tick grid
+CL	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject multi-bar OHLC consistency query
+NI	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: long failure at extreme
+GQ	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: mirrored short failure
+LS	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: long opposing aggression beyond A
+FI	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: mirrored short opposing aggression
+PR	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject wrong aggression direction
+IR	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: extreme must be inside zone
+FD	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: retest requires cell beyond A high
+CL	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: enforce selected imbalance ratio
+CN	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: enforce minimum cell volume
+OG	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: optional MNQ bar minimum rejects small sample
+GD	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: optional MNQ contract guard accepts matching units
+FN	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: POC tie and contiguous 70 percent value area
+LN	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: reject fractional tick bins
+HF	0	00:15:55.450	Biltech_AllTests (EURUSD,M5)	PASS: profile query cannot include future bars
+RE	0	00:15:55.452	Biltech_AllTests (EURUSD,M5)	PASS: load explicit unknown classifications
+QO	0	00:15:55.452	Biltech_AllTests (EURUSD,M5)	PASS: strict unknown default rejects
+PD	0	00:15:55.452	Biltech_AllTests (EURUSD,M5)	PASS: explicit unknown allowance respected
+LI	0	00:15:55.454	Biltech_AllTests (EURUSD,M5)	PASS: load zero denominator evidence
+PL	0	00:15:55.454	Biltech_AllTests (EURUSD,M5)	PASS: zero denominator never implies infinity
+HP	0	00:15:55.455	Biltech_AllTests (EURUSD,M5)	PASS: load sparse fixture for explicit coverage failure
+KF	0	00:15:55.455	Biltech_AllTests (EURUSD,M5)	PASS: missing M5 interval rejects
+JR	0	00:15:55.457	Biltech_AllTests (EURUSD,M5)	PASS: malformed numeric input rejects
+LR	0	00:15:55.457	Biltech_AllTests (EURUSD,M5)	PASS: failed load clears previous dataset
+HG	0	00:15:55.458	Biltech_AllTests (EURUSD,M5)	PASS: off tick price rejects
+HM	0	00:15:55.459	Biltech_AllTests (EURUSD,M5)	PASS: duplicate price cell rejects
+JM	0	00:15:55.459	Biltech_AllTests (EURUSD,M5)	PASS: price change classifier rejects
+PF	0	00:15:55.460	Biltech_AllTests (EURUSD,M5)	PASS: broker suffix mismatch rejects
+NO	0	00:15:55.463	Biltech_AllTests (EURUSD,M5)	PASS: absent data rejects
+QM	0	00:15:55.466	Biltech_AllTests (EURUSD,M5)	PASS: load independent NQ unit-guard sample
+CK	0	00:15:55.466	Biltech_AllTests (EURUSD,M5)	PASS: never transfer MNQ minimum to NQ
+HM	0	00:15:55.466	Biltech_AllTests (EURUSD,M5)	Biltech provider assertions: 41 passed; 0 failed. No market backtest was performed by this script.
+RK	0	00:15:55.470	Biltech_AllTests (EURUSD,M5)	PASS: new journal opens with fresh state
+MS	0	00:15:55.473	Biltech_AllTests (EURUSD,M5)	PASS: consumed impulse and uncertain submission are flushed before execution
+KR	0	00:15:55.474	Biltech_AllTests (EURUSD,M5)	PASS: second writer cannot acquire exclusive journal lock
+JP	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: committed journal reopens without resetting
+PK	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: configuration and session equity baseline round trip
+CI	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: restart retains risk, unresolved submission and consumed setup locks
+LJ	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: impulse retirement, completed bar and closed deal cursor round trip
+LI	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: frozen pivot anchors, zone and A evidence round trip
+OO	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: submitted execution evidence round trip
+QR	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: trade-specific setup and original account-currency risk remain independent of current setup
+CS	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: trade-specific B confirmation evidence round trips with its trade
+HM	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: closed-trade cursor and original configuration/run survive later configuration changes
+KO	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: uncertain forced-close request remains locked across restart
+CS	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: restored journal supplies permanent strategy retirement state
+HL	0	00:15:55.475	Biltech_AllTests (EURUSD,M5)	PASS: journal supports empty string fields
+OI	0	00:15:55.476	Biltech_AllTests (EURUSD,M5)	PASS: empty fields do not erase following safety or plan fields
+DE	0	00:15:55.477	Biltech_AllTests (EURUSD,M5)	PASS: interrupted dirty journal refuses initialization
+HG	0	00:15:55.477	Biltech_AllTests (EURUSD,M5)	PASS: explicit fixture reset can create another committed test journal
+ML	0	00:15:55.481	Biltech_AllTests (EURUSD,M5)	PASS: truncated journal refuses initialization
+GP	0	00:15:55.487	Biltech_AllTests (EURUSD,M5)	BILTECH_EXECUTION_TESTS: passed=19 failed=0
+QE	0	00:15:55.492	Biltech_AllTests (EURUSD,M5)	BILTECH_NATIVE_COMPLETE: 112 passed; 0 failed. No market backtest.

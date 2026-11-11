@@ -1,0 +1,15 @@
+key,value
+source,SYNTHETIC_TEST_ONLY
+dataset_id,synthetic-symmetry-v1
+symbol,TEST.NAS
+instrument,MNQ
+units,contracts
+classifier,exchange_aggressor_flag
+classifier_details,Literal hand-authored values for provider tests only
+time_basis,UTC
+coverage_from_utc,2026-07-06T13:30:00Z
+coverage_to_utc,2026-07-06T13:50:00Z
+complete,true
+rollover_policy,single_contract
+contract_id,SYNTHETIC_MNQU26
+price_basis,unadjusted

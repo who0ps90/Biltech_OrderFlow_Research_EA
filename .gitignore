@@ -1,0 +1,6 @@
+# Optional Git use. Keep verification logs and the delivered EX5 reviewable.
+build/mt5-native/
+*.tmp
+*.bin
+
+build/local-original-logs/
